@@ -28,7 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('shop.urls')),
     path('example/', include('example.urls')),
-    path('swagger/', SchemaView.with_ui()),
+    path('', SchemaView.with_ui()),
 ]
 
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
